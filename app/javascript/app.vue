@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Header />
     <router-view></router-view>
   </div>
 </template>
@@ -12,6 +13,7 @@ import EmployeeIndexPage from 'EmployeeIndexPage.vue'
 import EmployeeDetailPage from 'EmployeeDetailPage.vue'
 import EmployeeNewPage from 'EmployeeNewPage.vue'
 import EmployeeEditPage from 'EmployeeEditPage.vue'
+import Header from './components/layout/Header.vue'
 
 
 
@@ -35,7 +37,10 @@ const router = new VueRouter({
 Vue.use(VueRouter)
 
 export default {
-  router
+  router,
+  components: {
+    Header
+  }
 }
 </script>
 
