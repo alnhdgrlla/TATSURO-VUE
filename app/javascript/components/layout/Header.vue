@@ -1,6 +1,8 @@
 <template>
   <header class="header">
     <h1>Employee Index</h1>
+    <router-link to="/"> See all employees </router-link>
+    <router-link to="/employees/new"> Create new employee </router-link>
   </header>
 </template>
 
@@ -13,7 +15,7 @@ export default {
 <style scoped>
   .header {
     background: #333;
-    color: #fff;
+    color: white;
     text-align: center;
     padding: 10px;
   }
